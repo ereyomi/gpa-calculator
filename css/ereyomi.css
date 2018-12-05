@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: white;
+  overflow-x: hidden;
+}
+button {
+	border:none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.top {
+  margin: 0;
+  padding: 0;
+  top:0;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+.top1 {
+  width: 30%;
+}
+.menu {
+  margin: 5px; 
+}
+.top2 {
+  width:70%;
+}
+.top2 span {
+  margin-top: 8px;
+  font-size: 20px;
+  /*color: #17a2b8;*/
+  color: #292C97;
+}
+input[type="text"], input[type="number"], select {
+   background:white;
+   border:none;
+   border: 1px solid  #292C97;
+   border-radius: 3px;
+   font-size:15px;
+   color: #292C97;
+}
+  input[type="text"], input[type="number"]{
+  padding:10px 20px;
+}
+input[type="text"] {
+   width:40%;
+   font-size:15px;
+   }
+   
+input[type="number"]{
+   width:25%;
+   margin: 0px 8px;
+   }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color:  #292C97;
+   opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:  #292C97;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:  #292C97;
+}
+select {
+	padding:10.24px 8px;
+}
+.grade {
+    
+    width: 20%;
+}
+.remove {
+	font-size: 15px;
+	color: red;
+    margin-left: 6px;
+    background: none;
+}
+.remove:hover {
+	color: #660000;
+}
+.gp_box {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0 20px;
+}
+.mydiv {
+  margin:6px 0px;
+}
+#show {
+  display: none;
+	width: 80%;
+	color: white;
+	margin: 5px auto;	
+	border-radius:3px;
+	padding: 10px;
+}
+
+.erem {
+  margin-top:60px;
+}
+.erem label {
+  font-size: 10px;
+}
+.eremi {
+    margin-top:5px;
+    text-align: center;
+}
+.point {
+  width :40% !important;
+}
+.unitt {
+  width:30% !important;
+}
+.add, .option, #reset, .opt {
+
+  margin: 5px !important;
+    padding:10px 30px !important;
+}
+.add, #numb {
+    color: #292C97 !important;
+  }
+  #numb {
+
+  margin: 5px !important;
+    padding:10px 15px !important;
+  }
+.cal {
+    padding: 10px 65px !important;
+  }
+
+.menu {
+  background: #292C97 !important;
+}
+.abapp {
+  color:#3137A8;
+}
+.abapp a{
+  color: #3137A8;
+}
+/*------- card-------------*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px !important;
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+.card h3 {
+  color: #3137A8;
+}
+.card img {
+  width: 100%;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+}
+.card span a {
+  color: #3137A8;
+}
+.card p {
+}
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: #3137A8;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card button:hover, .card a:hover {
+    opacity: 0.7;
+}
+/*-------end of card-------------*/
+@media screen and (min-width: 480px) {
+
+  .top2 span {
+    font-size: 25px;
+  }
+  .add, .option, #reset, #numb, .opt {
+    padding: 10px 33px !important;
+  }
+  
+  .cal {
+    padding: 15px 70px !important;
+  }
+  #show {
+    width:60%;
+  }
+  .remove {
+    margin-left: 8px;
+}
+
+}
+
+@media screen and (min-width: 520px) {
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+}
