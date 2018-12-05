@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <title>GPA calculator</title>
+
+  <!-- ereyomi CSS -->
+  <link rel="stylesheet" href="css/ereyomi.css">
+	
+	
+	 <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/all.js"></script>
+	
+	
+	
+	
+</head>
+
+<body>
+       
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>CGPA Calculator</h3>
+                <strong>CG</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-calculator"></i>
+                        GPA
+                    </a>
+                </li>
+                <li>
+                    <a href="cgpa.html">
+                        <i class="fa fa-calculator"></i>
+                        CGPA
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                
+                
+                <li>
+                    <a href="https://www.facebook.com/fupreblog" class="" ="exit_it">
+                        <i class="fab fa-facebook"></i>
+                        FB page
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fupreblog.com" class="" ="exit_it">
+                        <i class="fas fa-globe"></i>
+                        our blog
+                    </a>
+                </li>
+                
+                
+
+            </ul>
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="row top no-gutters">
+
+                <div class="top1">
+
+                    <button type="button" id="sidebarCollapse" class="menu btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="top2">
+                    <span class="">CGPA calculator</span>
+                </div>
+               
+                
+            </nav>
+
+
+
+             
+           <!--calculator-->
+           <div class="container no-gutters">
+           <div class="row justify-content-center">
+            <div class="col-sm-8 erem">
+                <div class="gp_box">
+                    <div id="ere">
+                            
+                        </div>
+                </div>
+                <div class="show" id="show"></div>
+            </div>
+            
+            </div>
+		
+		
+                <div class="row justify-content-center">
+                        
+
+                <div class=".col-sm-6 eremi">
+                            <button type="button" class="btn btn-warning" type="button" id="numb">Number of semester <i class="fas fa-plus-circle"></i></button>
+                            <select class="opt">
+                                <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            </select>
+                            <br>
+
+                            <button class="btn btn-success cal" type="button">calculate <i class="fas fa-calculator"></i></button><br>
+
+                            <button type = "button" class="btn btn-danger" id="reset" type="button">reset <i class="fas fa-window-close"></i></button>
+
+
+
+                   
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+        </div> 
+ 
+	
+	
+	
+	<!-- jQuery CDN --->
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <!-- Popper.JS -->
+     <script src="js/popper.min.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="js/bootstrap.min.js"></script>
+        
+     <!-- ereyomi js -->
+     <script src="js/erecgpa.js"></script>
+</body>
+
+</html>

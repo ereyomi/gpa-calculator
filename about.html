@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <title>GPA calculator</title>
+
+ <!-- ereyomi CSS -->
+  <link rel="stylesheet" href="css/ereyomi.css">
+    
+    
+     <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/all.js"></script>
+	
+	
+	
+</head>
+
+<body>
+       
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>About us</h3>
+                <strong>AB</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-calculator"></i>
+                        GPA
+                    </a>
+                </li>
+                <li>
+                    <a href="cgpa.html">
+                        <i class="fa fa-calculator"></i>
+                        CGPA
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                
+                
+                <li>
+                    <a href="https://www.facebook.com/fupreblog" class="" ="exit_it">
+                        <i class="fab fa-facebook"></i>
+                        FB page
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.fupreblog.com" class="" ="exit_it">
+                        <i class="fas fa-globe"></i>
+                        our blog
+                    </a>
+                </li>
+            </ul>
+           
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="row top no-gutters">
+
+                <div class="top1">
+
+                    <button type="button" id="sidebarCollapse" class="menu btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="top2">
+                    <span class="">About us</span>
+                </div>
+            </nav>
+            <!--calculator-->
+        <div class="container no-gutters">
+            <div class="row no-gutters">
+                <div class="col-sm-6 erem">
+                    App version 0.0.2
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 abapp">
+                    <h4>About App</h4>
+                    <p>This app is a Grade Point Average (GPA)  calculator. The app is build base on <a href="https://fupre.edu.ng" target="_blank">Fupre</a> grading system on a 5.0 scale</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 abapp">
+                    <h4>About Blog</h4>
+                    <p>
+                        fupreBlog is a platform for students by the students. For update, past questions and lot more.<br>
+                        <a href="https://www.facebook.com/fupreblog" target="_blank">
+                            like our Page  <i class="fa fa-thumbs-up"></i>
+                        </a><br>
+                        <a href="https://instagram.com/fupreblog" target="_blank">
+                            follow us on Instagram  <i class="fab fa-instagram"></i>
+                        </a>
+                        <div class="fb-page" data-href="https://www.facebook.com/fupreblog" data-width="380" data-hide-cover="false" data-show-facepile="false"></div>
+                    </p>
+                </div>
+            </div>
+                
+                <div  class="row">
+                    <div class="card">
+                              <img src="oteri.png" alt="Oteri">
+                              <h3>Oteri Avwunudiogba</h3>
+                              <p>CEO & Founder</p>
+                              <p>FupreBlog</p>
+                               <span class="row justify-content-center">
+                                      <span class="col-2"><a href="https://www.facebook.com/oteri911"><i class="fab fa-facebook"></i></a></span>
+                                      <span class="col-2"><a href="https://api.whatsapp.com/send?phone=+2347012413480"><i class="fab fa-whatsapp"></i></a></span>
+                             </span> 
+                                <a href="tel:+2347012413480"><button type="button">Contact</button></a>
+                        
+                    </div>
+                    <div class="card col-10">
+                        <img src="ere.png" alt="Oteri">
+                              <h3>Ereyomi</h3>
+                              <p>Web / App Developer</p>
+                              <p>FupreBlog</p>
+                               <span class="row justify-content-center">
+                        
+                                      <span class="col-2"><a href="https://www.facebook.com/ereyomio"><i class="fab fa-facebook"></i></a></span>
+                                      <span class="col-2"><a href="https://www.linkedin.com/in/ereyomi"><i class="fab fa-linkedin"></i></a></span>
+                                      <span class="col-2"><a href="https://www.instagram.com/ereyomi"><i class="fab fa-instagram"></i></a></span>
+                                       <span class="col-2"><a href="https://api.whatsapp.com/send?phone=+2347035432921"><i class="fab fa-whatsapp"></i></a></span>
+                             </span> 
+                               <a href="tel:+2347035432921"><button type="button"><span></span>Contact</button></a>
+                    </div>
+                </div>
+
+        
+                   
+        </div>
+    </div> 
+ 
+	
+	
+	
+	
+	  <!-- jQuery CDN -) -->
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <!-- Popper.JS -->
+     <script src="js/popper.min.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="js/bootstrap.min.js"></script>
+        
+     <!-- ereyomi js -->
+     <script src="js/ereyomi.js"></script>
+     <script src="app-exit.js"></script>
+
+     
+</body>
+
+</html>
