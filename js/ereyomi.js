@@ -164,6 +164,7 @@ if (inputs.length) {
 			b:"B",
 			c:"C",
 			d:"D",
+			e:"E",
 			f:"F",
 			};
 
@@ -172,6 +173,7 @@ if (inputs.length) {
 			b:4,
 			c:3,
 			d:2,
+			e:1,
 			f:0,
 			};
 
